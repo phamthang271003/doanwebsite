@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="container.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="product.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header-wrapper">
+            <div class="header-topbar">
+                <div class="flex-row">
+                    <div class="flex-left">
+                        <span>Những sản phẩm hot nhất thị trường</span>
+                    </div>
+                    <div class="flex-right">
+                        <a href="#">blog </a>
+                        <a href="#">liên hệ</a>
+                        <a href="#">Newsletter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="header-bottom-left">
+                    <a href="/">
+                        <img class="logo" src="https://giaydantuongtuanlinh.com/wp-content/uploads/2022/08/weqq.png"
+                            alt="Giấy Dán Tường Tuấn Linh">
+                    </a>
+                </div>
+                <div class="header-bottom-center">
+
+
+                    <div class="header-bottom-seacrh">
+                        <form class="fr-search">
+                            <div class="search">
+                                <div class="search-input">
+                                    <input type="search" placeholder="Tìm Kiếm...">
+                                </div>
+                                <div class="search-submit">
+                                    <button type="submit" value="Tìm kiếm"
+                                        class="ux-search-submit submit-button secondary button icon mb-0"
+                                        aria-label="Submit">
+                                        <img class="img-search" src="image/search.png" alt="">
+                                    </button>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="menu">
+
+                        <ul class="header-nav nav-left">
+
+                            <li><a href="#">Trang Chủ</a></li>
+                            <li><a href="#">Giới Thiệu</a> </li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="#">Danh Mục</a></li>
+                            <li><a href="#">Công Trình Tiêu Biểu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-bottom-right">
+                    <ul class="header-nav nav-right">
+                        <li> <a href="formregister.html">Đăng Nhập</a> </li>
+                        <li><a href="container.html">Giỏ Hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="row-full">
+            <div class="steps-to-take">
+                <div class="step">
+                    <a href="#"><span class="breadcrumb-step">1</span> SHOPPING CAR</a>
+                </div>
+                <div class="step">
+                    <i class="fas fa-chevron-right" style="color: #5d7398;"></i>
+                </div>
+                <div class="step">
+                    <a href="#"><span class="breadcrumb-step">2 </span> CHECKOUT DETAILS </a>
+                </div>
+                <div class="step">
+                    <i class="fas fa-chevron-right" style="color: #5d7398;"></i>
+                </div>
+                <div class="step">
+                    <a href="#"><span class="breadcrumb-step">3</span>ORDER COMPLETE</a>
+                </div>
+            </div>
+            <div class="container-top">
+                <div class="container-top-left">
+
+                    <div class="product-container">
+                        <div class="product-name">
+                            Sản Phẩm
+                        </div>
+                        <div class="product-right">
+                            <div class="product-price">
+                                Giá
+                            </div>
+                            <div class="product-quanity">
+                                Số lượng
+                            </div>
+                            <div class="product-subtotal">
+                                Tạm Tính
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pay-product">
+
+                </div>
+            </div>
+            <div class="container-bottom">
+                <div class="container-bottom-left">
+                    <div class="container-bottom-image">
+                        <img src="  image/product.jpg" alt="" width="75px" height="60px">
+                    </div>
+                    <div class="text-name-product">
+                        <p>Thi công hoàn thiện sàn gỗ nhập khẩu Malaysia và giấy dán tường Hàn Quốc cho chị Tuyết Anh ở
+                            773
+                            Lê Trọng Tấn,Quận Tân Phú</p>
+                    </div>
+                    <div class="price">
+                        <span>11Đ</span>
+                    </div>
+                    <div class="quanity">
+                        <div class="counter">
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                    </div>
+                    <div class="subtotal">
+                        <span> 11Đ</span>
+                    </div>
+
+
+                </div>
+                <div class="container-bottom-right">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 
+    <footer>
+        <section class="section-8">
+            <div class="cards-footer">
+                <div class="card-footer">
+                    <div class="card-footer-left">
+                        <div class="logo-footer">
+                            <a href="#">
+                                <img class="logo"
+                                    src="https://giaydantuongtuanlinh.com/wp-content/uploads/2022/08/weqq.png"
+                                    alt="Giấy Dán Tường Tuấn Linh">
+                            </a>
+                        </div>
+                        <div class="address">
+                            <p>Văn phòng: 31/39B Huỳnh Thiện Lộc, P. Hoà Thạnh, Q. Tân Phú, TP.HCM;<br>MST:
+                                0315804050<br>Email: giaydantuongtuanlinh1368@gmail.com<br>Hotline: 0777 10 1368 -
+                                0911
+                                388 633
+                            </p>
+                            <div class="infor">
+                                <a href="#" class="icon-fotter">
+                                    <i class="fas fa-phone fa-rotate-90" style="color:#fff"></i>
+                                    <span>Call</span>
+                                </a>
+                                <a href="#" class="icon-fotter">
+                                    <i class="far fa-envelope" style="color:#fff"></i>
+                                    <span>E-Mail</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="category-footer">
+                        <h4>Danh Mục</h4>
+                    </div>
+                    <ul class="list-category">
+                        <li><span><a href="#">Giấy Dán Tường Hàn Quốc</a></span></li>
+                        <li><a href="#">Giấy Dán Tường Nhật Bản</a></li>
+                        <li><a href="#">Sàn Gỗ Công Nghiệp</a></li>
+                        <li><a href="#">Tranh Dán Tường 3D</a></li>
+                        <li><a href="#">Giấy Dán Tường Giả Gạch</a></li>
+                        <li><a href="#">Giấy Dán Tường Trẻ em</a></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <div class="category-footer">
+                        <h4>Chính Sách</h4>
+                    </div>
+                    <ul class="list-category">
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Chính Sách Dịch Vụ</a></li>
+                        <li><a href="#">Chính Sách Thanh Toán</a></li>
+                        <li><a href="#">Chính Sách Vận Chuyển</a></li>
+                        <li><a href="#">Chính Sách Bảo Hành</a></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <div class="category-footer">
+                        <h4>Liên Hệ</h4>
+                    </div>
+                    <ul class="list-category">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Công Trình Tiêu Biểu</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="strikethrough-2">
+
+
+            </div>
+
+
+
+
+            <div class="copyright">
+                <p>© 2023 Copyright Tuấn Linh | Copyright giaydantuongtuanlinh.com</p>
+            </div>
+        </section>
+    </footer> -->
+
+</body>
+
+</html>

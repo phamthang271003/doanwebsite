@@ -1,0 +1,323 @@
+body {
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* header */
+header#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateZ(0);
+    z-index: 100;
+}
+
+.header-topbar {
+    background-color: #353535;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    align-items: center;
+    min-height: 30px;
+
+}
+
+.flex-left {
+    color: #fff;
+}
+
+.flex-right a {
+    color: #fff;
+}
+
+.header-bottom {
+    display: flex;
+    background-color: #1e2634;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 0px 100px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+
+
+.search {
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-input {
+    width: 100%;
+}
+
+input[type="search"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #f272ac;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0px 0px grey;
+}
+
+.button.secondary:not(.is-outline) {
+    border-bottom-right-radius: 13px;
+    background-color: #ef3e3e;
+    height: 40px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    width: 45px;
+    border: solid 2px #fff;
+}
+
+.img-search {
+    width: 18px;
+}
+
+ul.header-nav.nav-left {
+    padding: 0px;
+}
+
+ul.header-nav li {
+    display: inline-block;
+}
+
+ul.header-nav li a {
+    color: #fff;
+    font-weight: 700;
+    padding: 0px 4px;
+}
+
+/* header */
+
+/*main*/
+.main {
+    margin: 160px 0px 0px 0px;
+}
+
+.formregister {
+
+    width: 400px;
+    height: 400px;
+    background: white;
+    border: 1px solid ;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.middle-content {
+    display: flex;
+    justify-content: space-evenly;
+ 
+}
+.nameform {
+    padding: 30px;
+}
+.nameform span{
+    font-size: 20px;
+}
+.content-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+input#phone {
+    padding: 0.75em;
+    flex: 1;
+    flex-shrink: 0;
+}
+.submit{
+    color: #fff;
+    background-color: #1e2634;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0.75rem;
+}
+.submit:hover{
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.strikethrough-or {
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+}
+.or{
+    color: #ccc;
+    padding: 0 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.strikethrough {
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+    flex: 1;
+}
+.signup-account{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.btn-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.26);
+    background-color: #fff;
+    color: rgba(0,0,0,.87);
+    padding: 0 2px;
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+    font-size: .875rem;
+    margin: 5px;
+}
+.btn-signup:hover{
+background-color: rgba(0,0,0,.02);
+}
+.logo-gg {
+    padding: 0px 5px;
+}
+.logo-fb {
+    padding: 0px 5px;
+}
+.account-login{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgba(0,0,0,.26);
+    white-space: pre;
+}
+.login{
+    color:#1e2634;
+}
+.text-box{
+    padding: 0px 30px;
+}
+
+
+
+
+/*main*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.section-8 {
+    background-color: #1f1f1f;
+}
+li{
+    list-style-type: disclosure-closed;
+    
+    color: #7a9c59;
+   
+}
+.cards-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-footer{
+    padding-top: 30px;
+}
+.card-footer p {
+    color: #f1f1f1;
+    line-height: 30px;
+}
+
+.category-footer {
+    color: #f1f1f1;
+}
+.category-footer h4{
+    margin: 0;
+}
+.address p {
+    margin: 0;
+}
+.list-category{
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+}
+.list-category li{
+ 
+    padding: 7px 0 7px 25px;
+    border-bottom: 1px solid #ececec
+}
+
+.list-category li a {
+    color: #f1f1f1 ;
+
+}
+.address .icon-fotter span{
+    color:#fff;
+}
+.infor{
+    padding-top: 10px;
+}
+.infor a{
+    padding-right: 20px;
+}
+
+
+.strikethrough-2{
+    margin: 60px 0px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.copyright{
+    color:#fff;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+
+
+/*footer*/
