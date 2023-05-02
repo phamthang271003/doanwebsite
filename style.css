@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 li {
@@ -16,7 +16,7 @@ li {
 }
 
 /* header */
-header#header {
+/* header#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -109,7 +109,7 @@ ul.header-nav li a {
     color: #fff;
     font-weight: 700;
     padding: 0px 4px;
-}
+} */
 
 /* header */
 
@@ -174,6 +174,7 @@ img.card-img-introduce {
     width: calc(100%/8);
     border: 1px solid grey;
 }
+
 .item-selling-list:Hover {
     box-shadow: 1px 1px 0px 1px gray;
 }
@@ -280,9 +281,10 @@ img.card-img-introduce {
     box-shadow: 0 10px 6px -6px #777;
 }
 
-.title h3{
+.title h3 {
     font-size: 23px;
 }
+
 .title-section {
     display: flex;
     justify-content: space-between;
@@ -504,12 +506,120 @@ li {
 }
 
 /*footer*/
+header#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateZ(0);
+    z-index: 100;
+}
+
+.header-topbar {
+    background-color: #353535;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    align-items: center;
+    min-height: 30px;
+
+}
+
+.flex-left {
+    color: #fff;
+}
+
+.flex-right a {
+    color: #fff;
+}
+
+.header-bottom {
+    display: flex;
+    background-color: #1e2634;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 0px 100px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+
+.search {
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-input {
+    width: 100%;
+}
+
+input[type="search"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #f272ac;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0px 0px grey;
+}
+
+.button.secondary:not(.is-outline) {
+    border-bottom-right-radius: 13px;
+    background-color: #ef3e3e;
+    height: 40px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    width: 45px;
+    border: solid 2px #fff;
+}
+
+.img-search {
+    width: 18px;
+}
+
+ul.header-nav.nav-left {
+    padding: 0px;
+}
+
+ul.header-nav li {
+    display: inline-block;
+}
+
+ul.header-nav li a {
+    color: #fff;
+    font-weight: 700;
+    padding: 0px 4px;
+}
 
 /*responsive*/
 @media screen and (max-width: 1023px) {}
 
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    /*header*/
+    .flex-right a{
+        display: none;
+    }
+    .header-bottom-center
+    {
+        display: none;
+    }
+    .header-bottom-right .header-nav li a
+    {
+        display: none;
+    }
+    .fas
+    {
+        font-size: 30px;
+    } 
+    
+    /*header*/
+}
 
 @media screen and (max-width: 479px) {}
 

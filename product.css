@@ -59,12 +59,6 @@ header#header {
     max-width: 300px;
 }
 
-.header-bottom-left {}
-
-.header-bottom-center {}
-
-.header-bottom-right {}
-
 .search {
     display: flex;
     margin-top: 10px;
@@ -269,9 +263,6 @@ span.aa {
     font-weight: 700;
     font-size: 18px;
     border:0;
-}
-.add-to-cart:hover{
-    
 }
 .zalo
 {
