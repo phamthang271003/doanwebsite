@@ -706,9 +706,13 @@ ul.header-nav li a {
 
     .header-topbar {}
 
-    .header-bottom {}
+    .header-bottom {
+        padding: 0px 25px;
+    }
 
-    .flex-row {}
+    .flex-row {
+        margin: 0px 25px;
+    }
 
     .flex-left {}
 
@@ -731,6 +735,9 @@ ul.header-nav li a {
     .fas {
 
         font-size: 30px;
+    }
+    .fa-phone {
+        font-size: 16px;
     }
 
     /*header*/
