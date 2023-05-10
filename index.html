@@ -18,6 +18,13 @@
     <title>Giấy dán tường Tuấn Linh</title>
 
 </head>
+<script>
+    $(document).ready(function () {
+        $('#toggle').click(function () {
+            $('.header-bottom-left').slideToggle();
+        });
+    })
+</script>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -30,6 +37,7 @@
     <header id="header" class="header">
         <div class="header-wrapper">
             <div class="header-topbar">
+
                 <div class="flex-row">
                     <div class="flex-left">
                         <span>Những sản phẩm hot nhất thị trường</span>
@@ -50,8 +58,6 @@
                     </a>
                 </div>
                 <div class="header-bottom-center">
-
-
                     <div class="header-bottom-seacrh">
                         <form class="fr-search">
                             <div class="search">
@@ -64,15 +70,12 @@
                                         aria-label="Submit">
                                         <img class="img-search" src="image/search.png" alt="">
                                     </button>
-
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="menu">
-
                         <ul class="header-nav nav-left">
-
                             <li><a href="#">Trang Chủ</a></li>
                             <li><a href="#">Giới Thiệu</a> </li>
                             <li><a href="shop.html">Shop</a></li>

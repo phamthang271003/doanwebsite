@@ -182,12 +182,6 @@ ul.product-categoty {
     flex: 1;
 }
 
-.row-full {
-    max-width: 1250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .product-shop {
     display: flex;
     flex-wrap: wrap;
@@ -392,7 +386,9 @@ li {
     .header-bottom {
         padding: 0px 25px;
     }
-
+.row-full{
+    width: auto ;
+}
     .flex-row {
         margin: 0px 25px;
     }
@@ -454,16 +450,15 @@ li {
         --spacing: 25px;
         --columns: 1;
     }
+
     .card {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .popular-category{
-        display: none;
-    }
-   
-    
+
+
+
     /*main*/
 
     /*footer*/
