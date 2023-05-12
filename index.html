@@ -21,7 +21,7 @@
 <script>
     $(document).ready(function () {
         $('#toggle').click(function () {
-            $('.header-bottom-left').slideToggle();
+            $('nav').slideToggle();
         });
     })
 </script>
@@ -40,7 +40,7 @@
 
                 <div class="flex-row">
                     <div class="flex-left">
-                        <span>Những sản phẩm hot nhất thị trường</span>
+                        <span><marquee behavior=""  direction="left"> Những sản phẩm hot nhất thị trường</marquee></span>
                     </div>
                     <div class="flex-right">
                         <a href="#">blog </a>
@@ -51,7 +51,11 @@
             </div>
 
             <div class="header-bottom">
+                <div id="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <div class="header-bottom-left">
+                   
                     <a href="/">
                         <img class="logo" src="https://giaydantuongtuanlinh.com/wp-content/uploads/2022/08/weqq.png"
                             alt="Giấy Dán Tường Tuấn Linh">
@@ -74,18 +78,28 @@
                             </div>
                         </form>
                     </div>
-                    <div class="menu">
-                        <ul class="header-nav nav-left">
-                            <li><a href="#">Trang Chủ</a></li>
-                            <li><a href="#">Giới Thiệu</a> </li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li>
-                                <a class="menu-category" href="#">Danh Mục</a>
-                            </li>
-                            <li><a href="#">Công Trình Tiêu Biểu</a></li>
-                            <li><a href="#">Liên Hệ</a></li>
-                        </ul>
-                    </div>
+
+                    <nav>
+                        <div class="menu">
+                            <ul class="header-nav nav-left">
+                                <li><a href="#">Trang Chủ</a></li>
+                                <li>
+                                    <a href="#">Giới Thiệu</a>
+
+                                </li>
+                                <li>
+                                    <a href="shop.html">Shop</a>
+
+                                </li>
+                                <li>
+                                    <a class="menu-category" href="#">Danh Mục</a>
+
+                                </li>
+                                <li><a href="#">Công Trình Tiêu Biểu</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
                 <div class="header-bottom-right">
                     <ul class="header-nav nav-right">

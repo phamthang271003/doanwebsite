@@ -14,6 +14,7 @@ a {
 li {
     list-style-type: none;
 }
+
 /*header*/
 header#header {
     position: fixed;
@@ -241,6 +242,7 @@ img.card-img-introduce {
     background-color: #f4f4f4;
     padding: 15px 0px 80px 0px;
 }
+
 .title h3 {
     font-size: 20px;
 }
@@ -530,6 +532,76 @@ li {
 }
 
 /*footer*/
+nav {}
+
+.menu {
+    display: flex;
+}
+
+nav .menu li {
+    position: relative;
+
+}
+
+nav .menu li a {
+    /* text-decoration: none;
+    font: bold 12px/20px sans-serif;
+    color: #fff;
+    display: block;
+    padding: 8px 30px; */
+
+}
+
+nav .menu li:hover a {
+    /* background-color: #000000;
+    transition: all 0.3s; */
+}
+
+.menu.sub-menu {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+.menu li:hover .sub-menu li:hover a {
+    background-color: #DF4B05;
+    display: block;
+}
+
+#toggle {
+    display: none;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.mfp-content
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    background-color: rgba(255,255,255,.95);
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s,-webkit-transform .2s;
+    -webkit-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    transform: translateX(-270px);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
 
 /*responsive*/
 @media screen and (max-width: 1023px) {}
@@ -551,11 +623,15 @@ li {
 
     /*header*/
     .header-bottom {
-        padding: 0px 25px;
+        /* padding: 0px 25px; */
+        padding: 0px;
+        justify-content: space-evenly !important;
     }
+
     .flex-row {
         margin: 0px 25px;
     }
+
     .flex-right {
         display: none;
     }
@@ -564,12 +640,19 @@ li {
         display: none;
     }
 
-    .header-bottom-center {
+    .header-bottom-center {}
+
+    .header-bottom-seacrh {
         display: none;
     }
 
     .header-bottom-right .header-nav li a span {
         display: none;
+    }
+
+    .nav-right {
+        margin: 0px;
+        padding: 0px;
     }
 
     .fas {
@@ -587,42 +670,53 @@ li {
     .card-introduce-left {
         width: 100%;
     }
+
     .time-sale span {
         display: none;
     }
+
     .card-introduce-right {
         display: none;
     }
+
     .all-selling-list {
         --spacing: 0px;
         --columns: 2;
     }
+
     .cards {
         --spacing: 25px;
         --columns: 1;
     }
+
     .card {
         margin-left: auto;
         margin-right: auto;
     }
+
     .introduce {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 250px;
     }
+
     .introduce-left {
         margin-left: 20px;
     }
+
     .introduce-right {
         margin-right: 0px;
     }
+
     .section-3 {
         width: 100%;
     }
+
     .col-delivery {
         margin-bottom: 25px;
     }
+
     .col-delivery p {
         margin: 25px;
     }
@@ -632,13 +726,16 @@ li {
         flex-direction: column;
         margin: 0;
     }
+
     .img-delivery {
         width: 100%;
         height: auto;
     }
+
     .item-policy {
         width: calc(100%/2);
     }
+
     /*main*/
 
     /*footer*/
@@ -648,62 +745,33 @@ li {
     }
 
     .card-fotter {}
-    .menu{
-    
+
+
+    /*footer*/
+    .menu {
+
         flex-direction: column;
         margin: 0;
         padding: 0;
     }
-    #toggle{
+
+    #toggle {
         display: block;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    
-    /*footer*/
+
+    .menu .sub-menu {
+        position: absolute;
+        display: none;
+        float: left;
+        left: 55px;
+        z-index: 1;
+
+    }
+
 }
 
 /*responsive*/
-
-
-.menu{
-    display: flex ;
- }
- nav .menu li{
-   position: relative;
-  
- }
-nav .menu li a {
-    text-decoration: none;
-    font: bold 12px/20px sans-serif;
-    color: #fff;
-    display: block;
-    padding: 8px 30px;
-}
-nav .menu li:hover a {
-    background-color: #000000;
-    transition: all 0.3s;
-}
-/* #main-menu .sub-menu
-{
-   position: absolute;
-    right: 0;
-    display: none;
-}
-#main-menu li:hover .sub-menu{
-    display: block;
-}
-#main-menu li:hover .sub-menu li:hover a{
-    background-color: #DF4B05;
-    display: block;
-} */
-#toggle{
-    display: none;
-    background-color: red;
-    color:#fff;
-    text-align:left;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
