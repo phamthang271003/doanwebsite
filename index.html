@@ -40,7 +40,9 @@
 
                 <div class="flex-row">
                     <div class="flex-left">
-                        <span><marquee behavior=""  direction="left"> Những sản phẩm hot nhất thị trường</marquee></span>
+                        <span>
+                            <marquee behavior="" direction="left"> Những sản phẩm hot nhất thị trường</marquee>
+                        </span>
                     </div>
                     <div class="flex-right">
                         <a href="#">blog </a>
@@ -55,7 +57,7 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <div class="header-bottom-left">
-                   
+
                     <a href="/">
                         <img class="logo" src="https://giaydantuongtuanlinh.com/wp-content/uploads/2022/08/weqq.png"
                             alt="Giấy Dán Tường Tuấn Linh">
@@ -297,12 +299,30 @@
                 </div>
                 <div class="time-sale">
 
-                    <span>
+                    <div class="time-sale-left">
                         <ion-icon name="time-outline"></ion-icon>
                         GIẤY DÁN TƯỜNG FLASH SALE
-                    </span>
-                    <p></p>
-
+                    </div>
+                    <div class="time-sale-right">
+                        <div id="clockdiv">
+                            <div>
+                                <span class="days"></span>
+                                <div class="smalltext">Days</div>
+                            </div>
+                            <div>
+                                <span class="hours"></span>
+                                <div class="smalltext">Hours</div>
+                            </div>
+                            <div>
+                                <span class="minutes"></span>
+                                <div class="smalltext">Min</div>
+                            </div>
+                            <div>
+                                <span class="seconds"></span>
+                                <div class="smalltext">Sec</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1031,8 +1051,6 @@
             </div>
         </section>
     </div>
-
-
     <footer>
         <section class="section-8">
             <div class="cards-footer">
@@ -1108,6 +1126,49 @@
             </div>
         </section>
     </footer>
+    <script>
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var daysSpan = clock.querySelector('.days');
+            var hoursSpan = clock.querySelector('.hours');
+            var minutesSpan = clock.querySelector('.minutes');
+            var secondsSpan = clock.querySelector('.seconds');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+
+        var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+        initializeClock('clockdiv', deadline);
+    </script>
 </body>
 
 </html>

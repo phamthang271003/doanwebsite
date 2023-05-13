@@ -223,11 +223,34 @@ img.card-img-introduce {
     background: white;
 }
 
-.time-sale span {
+.time-sale-left {
     font-weight: 600;
     color: rgb(255, 71, 35);
 }
-
+  #clockdiv{
+      font-family: sans-serif;
+      color: #fff;
+      display: inline-block;
+      font-weight: 100;
+      text-align: center;
+      font-size: 16px;
+  }
+  
+  #clockdiv > div{
+    padding: 0px 10px 0px 10px;
+      border-radius: 3px;
+      background-color: rgba(0,0,0,.85);
+      display: inline-block;
+  }
+  
+  #clockdiv div > span{
+      border-radius: 3px;
+      display: inline-block;
+  }
+  
+  .smalltext{
+      font-size: 12px;
+  }
 
 
 
@@ -530,7 +553,6 @@ li {
     text-align: center;
     padding-bottom: 20px;
 }
-
 /*footer*/
 nav {}
 
@@ -579,28 +601,6 @@ nav .menu li:hover a {
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-}
-.mfp-content
-{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 260px;
-    background-color: rgba(255,255,255,.95);
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    -o-transition: transform .2s;
-    transition: transform .2s;
-    transition: transform .2s,-webkit-transform .2s;
-    -webkit-transform: translateX(-270px);
-    -ms-transform: translateX(-270px);
-    transform: translateX(-270px);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
 }
 
 /*responsive*/
