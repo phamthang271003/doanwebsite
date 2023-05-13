@@ -771,7 +771,10 @@ nav .menu li:hover a {
         z-index: 1;
 
     }
-
+.time-sale-right
+{
+    display: none;
+}
 }
 
 /*responsive*/
