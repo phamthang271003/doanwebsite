@@ -154,6 +154,8 @@ ul.header-nav li a {
 
 .container-top {
     display: flex;
+    justify-content: space-evenly;
+    ;
 }
 
 .container-top-left {
@@ -186,29 +188,52 @@ ul.header-nav li a {
     padding: 0px 10px;
 }
 
-.pay-product {
-    width: 40%;
-    ;
-}
+.pay-product {}
 
 .text-name-product {
     padding: 0px 10px;
     line-height: 24px;
 }
 
-.container-bottom {
-    display: flex;
-}
+.container-bottom {}
 
 .container-bottom-left {
     display: flex;
-    width: 60%;
+
     align-items: center;
 }
 
-.container-bottom-right {
-    width: 40%;
+.container-bottom-right {}
+
+.text-pay {
+   
+    border-style: solid;
+    border-bottom: 2px solid #ececec;
+    margin: 0px;
+    padding: 10px 100px 0px 0px;
 }
+.pay-left {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ececec;
+}
+.pay-right {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ececec;
+}
+.text-pay p{
+    margin: 0;
+}
+.btn-pay {
+    background-color: #ef3e3e;
+    padding: 10px;
+}
+.btn-pay a {
+    color:#fff;
+    
+}
+
 .counter {
     width: 150px;
     display: flex;
@@ -216,6 +241,7 @@ ul.header-nav li a {
     justify-content: center;
     background: #f9f9f9;
 }
+
 .counter input {
     width: 50px;
     border: 0;
@@ -227,19 +253,23 @@ ul.header-nav li a {
     appearance: none;
     outline: 0;
 }
+
 .counter span {
     display: block;
     font-size: 25px;
     padding: 0 10px;
     cursor: pointer;
-    color: #666;;
+    color: #666;
+    ;
     user-select: none;
 }
+
 .quanity {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 /*main*/
 
 
