@@ -464,6 +464,19 @@ width: auto ;
                         margin: 0px 20px 30px 20px;
                         
 }
+
+.quanity
+{
+    display: flex;
+    flex-direction: column;
+}
+.counter{
+    margin-bottom: 15px;
+}
+.btn-add
+{
+    margin-bottom: 15px;
+}
 /*main*/
 }
 
@@ -550,6 +563,18 @@ width: auto ;
                         
 }
 /*main*/
+.quanity
+{
+    display: flex;
+    flex-direction: column;
+}
+.counter{
+    margin-bottom: 15px;
+}
+.btn-add
+{
+    margin-bottom: 15px;
+}
 } 
 
 /*responsive*/
