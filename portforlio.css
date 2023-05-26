@@ -145,7 +145,7 @@ html, body {
   padding: 100px 0px; }
   .title h2 {color: white;
   font-size: 75px;
-width: 1130px;
+width: 100%;
 margin: 30px auto;
 text-align: center; }
 .box { display: flex;
@@ -261,3 +261,32 @@ transition: 0.5s; }
 .social-links a:hover::after { top: 0; }
 .social-links a:hover .fa-brands { color: #fff; }
 .social-links a:hover { transform: translateY(-10px); }
+
+
+/*responsive*/
+@media screen and (max-width: 767px) 
+{
+.main{
+  flex-wrap: wrap;
+
+}
+ul {
+  display: none;
+}
+.stream {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 40px;
+}
+.content h4
+{
+  margin-left: 15px;
+}
+.content h3{
+  margin-left: 15px;
+}
+.content h2{
+  margin-left: 15px;
+}
+}
+  
