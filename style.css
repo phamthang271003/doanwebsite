@@ -553,6 +553,22 @@ li {
     color: #fff;
     text-align: center;
     padding-bottom: 20px;
+    
+}
+.copyright p{
+    margin-bottom: 2rem;
+}
+.portifo
+{
+    background-color: red;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 2px solid transparent;
+    margin-top: 50px;
 }
 /*footer*/
 nav {}
